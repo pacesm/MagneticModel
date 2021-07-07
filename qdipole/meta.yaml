@@ -16,6 +16,8 @@ requirements:
   build:
    - {{ compiler('c') }}
    - {{ compiler('fortran') }}
+   - python {{ python }} # added to assure binary compatibility with particular Python/NumPy versions
+   - numpy
 
 test:
   commands:

@@ -18,6 +18,8 @@ requirements:
    - ncurses
    - {{ compiler('c') }}
    - {{ compiler('fortran') }}
+   - python {{ python }} # added to assure binary compatibility with particular Python/NumPy versions
+   - numpy
 
 about:
   home: https://github.com/ESA-VirES/MagneticModel/
